@@ -1,0 +1,190 @@
+/* Default styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #ff7f50;
+}
+
+button {
+  background-color: #ff7f50;
+  color: #ffffff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff6347;
+}
+
+/* Styles for the timer */
+.timer {
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.timer h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: center;
+}
+
+
+.timer div {
+  font-size: 10rem;
+  font-weight: 700;
+  color: #ff7f50;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for categories */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 180px;
+}
+
+.category h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: center;
+  color: #ff7f50;
+}
+
+.category ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+
+.category li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Styles for mobile screens */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+  }
+
+  .timer h2 {
+    font-size: 1rem;
+  }
+
+  .timer div {
+    font-size: 3rem;
+  }
+}
+
+  .category {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: calc(50% - 10px);
+  }
+
+  .categories {
+    flex-direction: column;
+ 
+  }
+
+  .categories ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto; /* changed from "scroll" */
+    scrollbar-width: none; /* added to remove the scrollbar */
+    -ms-overflow-style: none; /* added to remove the scrollbar in IE/Edge */
+  }
+  
+  .categories ul::-webkit-scrollbar { /* added to remove the scrollbar in Chrome/Safari */
+    display: none;
+  }
+  
+  .categories li {
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: calc(20% - 20px);
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container button {
+  margin: 20px auto;
+  display: block;
+  font-size: 2em;
+  padding: 10px 20px;
+}
+.container button {
+  margin: 20px auto;
+  display: block;
+  font-size: 2em;
+  padding: 20px 40px; /* increased padding values */
+}
+
+
+.random-letter div {
+    /* font-size: 10rem; */
+    font-size: 10rem;
+    font-weight: 700;
+    color: #ff7f50;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
